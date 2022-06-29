@@ -1,0 +1,214 @@
+@import "fuentes";
+@import "mixin";
+@import "main";
+@import "map";
+
+
+/* ========================================================================== */
+/* ====================== Estilos generales ================================= */
+/* ========================================================================== */
+
+.link-menu {
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	position: relative;
+	@include menu;
+}
+
+.nav-list {
+  	font-weight: bold;
+  	@media all and (max-width: 768px){
+  		display: flex;
+	    justify-content: center;
+	    align-items: center;	    	
+	}
+}
+
+.redSocial {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	padding: 38px 15px;
+	height: 130px;
+	transition: all .4s ease-in-out;
+	a {
+		&:hover {
+			transform: scale(1.2);
+			background-color: #01CDEF;
+			border-radius: 35px;
+		}
+	}
+}
+#footer {
+	border-bottom: 0.5px solid white;
+	background: map-get($map: $palette, $key: 'Primario');
+	height: 14vh;
+	width: auto;
+	@media all and (max-width: 1400px){
+		margin-bottom: 0;
+		background: white;
+		height: auto;
+		width: auto;
+		@media all and (max-width: 768px){
+			background: white;
+      		height: auto;
+      		width: auto;
+		}
+  }
+}
+
+/* ========================================================================== */
+/* ====================== Estilos Home ====================================== */
+/* ========================================================================== */
+.boton-reu {
+	width: 300px;
+	height: 120px;
+	border-radius: 15px;
+	border-bottom: 0.5px solid white;
+	overflow: hidden;
+	cursor: default;
+	transition: all 400ms ease;
+	&:hover {
+		box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+		transform: translatey(4%);
+	}
+}
+.mensaje {
+	width: auto;
+	padding: 10px;
+	height: 307px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.titulo {
+		font-family: 'Gantari', sans-serif;
+		font-size: 45px;
+		font-weight: bold;
+		color: map-get($map: $palette, $key: 'Primario');
+	}
+	.subtitulo {
+		font-size: 20px;
+		font-weight: bold;
+		color: map-get($map: $palette, $key: 'Primario');
+		font-family: 'Oxygen', sans-serif;
+	}
+}
+
+/* ========================================================================== */
+/* ====================== Estilos Quienes Somos ============================= */
+/* ========================================================================== */
+.cont_titulo {
+	text-align:center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: map-get($map: $palette, $key: 'Primario');
+	padding: 15px;
+	margin: 20px;
+}
+.contenedor-video {
+	border-radius: 40px;
+	height: 50%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+
+/* ========================================================================== */
+/* ====================== Estilos Informacion =============================== */
+/* ========================================================================== */
+.title {
+	text-align: center;
+	padding: 25px 0;
+}
+
+
+/* ========================================================================== */
+/* ====================== Estilos Pastores ================================== */
+/* ========================================================================== */
+
+.text-pastores{
+  align-items: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 18px;
+  color: map-get($map: $palette, $key: 'Primario');   
+}
+
+.titulo-pas {
+	padding: 5px;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: map-get($map: $palette, $key: 'Terciario');
+}
+.info-pas {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 17px;
+	color: map-get($map: $palette, $key: 'Terciario');
+	width: 800px;
+	@media all and (max-width: 375px){
+		 display: flex;
+		 flex-wrap: wrap;
+		 justify-content: center;
+		 align-items: center;
+		 width: 300px;
+	}
+}
+.cont-imagen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 160px;
+	padding: 40px;
+	@media all and (max-width: 1400px){
+		display: flex;
+    	flex-direction: column;
+	}
+	.imagen-pas {
+		.img-pas {
+			border-radius: 50%;
+			border: solid 2px map-get($map: $palette, $key: 'Secundario');
+		}
+	}
+}
+.cont-nomb-pas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 14px;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: map-get($map: $palette, $key: 'Primario');
+}
+.cont-detalle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 14px;
+	color: map-get($map: $palette, $key: 'Secundario');
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans&family=Oxygen&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gantari:wght@500&family=Lato:wght@700&display=swap");
+body {
+  margin: 0;
+  background-image: url(../assets/origen_fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+video {
+  width: 1555px;
+  height: 900px;
+}
+
+@media all and (max-width: 1400px) {
+  video {
+    width: 650px;
+    height: 450px;
+  }
+}
+
+@media all and (max-width: 1400px) and (max-width: 576px) {
+  video {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 34px;
+  padding-bottom: 5px;
+  font-family: 'Oxygen', sans-serif;
+  color: #fff;
+}
+
+/* ========================================================================== */
+/* ====================== Estilos generales ================================= */
+/* ========================================================================== */
+.link-menu {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+.link-menu:after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #01CDEF;
+  position: absolute;
+  bottom: 0;
+  transition: .5s ease-out all;
+}
+
+.link-menu:hover {
+  background-color: #01CDEF;
+  box-shadow: 5px 5px 10px rgba(165, 242, 255, 0.6);
+  border-radius: 20px;
+  width: 100%;
+  right: 0%;
+  align-items: center;
+}
+
+.nav-list {
+  font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.redSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 38px 15px;
+  height: 130px;
+  transition: all .4s ease-in-out;
+}
+
+.redSocial a:hover {
+  transform: scale(1.2);
+  background-color: #01CDEF;
+  border-radius: 35px;
+}
+
+#footer {
+  border-bottom: 0.5px solid white;
+  background: #fff;
+  height: 14vh;
+  width: auto;
+}
+
+@media all and (max-width: 1400px) {
+  #footer {
+    margin-bottom: 0;
+    background: white;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media all and (max-width: 1400px) and (max-width: 768px) {
+  #footer {
+    background: white;
+    height: auto;
+    width: auto;
+  }
+}
+
+/* ========================================================================== */
+/* ====================== Estilos Home ====================================== */
+/* ========================================================================== */
+.boton-reu {
+  width: 300px;
+  height: 120px;
+  border-radius: 15px;
+  border-bottom: 0.5px solid white;
+  overflow: hidden;
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.boton-reu:hover {
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+  transform: translatey(4%);
+}
+
+.mensaje {
+  width: auto;
+  padding: 10px;
+  height: 307px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensaje .titulo {
+  font-family: 'Gantari', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mensaje .subtitulo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* ========================================================================== */
+/* ====================== Estilos Quienes Somos ============================= */
+/* ========================================================================== */
+.cont_titulo {
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px;
+  margin: 20px;
+}
+
+.contenedor-video {
+  border-radius: 40px;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* ========================================================================== */
+/* ====================== Estilos Informacion =============================== */
+/* ========================================================================== */
+.title {
+  text-align: center;
+  padding: 25px 0;
+}
+
+/* ========================================================================== */
+/* ====================== Estilos Pastores ================================== */
+/* ========================================================================== */
+.text-pastores {
+  align-items: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.titulo-pas {
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.info-pas {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 17px;
+  color: #000000;
+  width: 800px;
+}
+
+@media all and (max-width: 375px) {
+  .info-pas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+}
+
+.cont-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+  padding: 40px;
+}
+
+@media all and (max-width: 1400px) {
+  .cont-imagen {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cont-imagen .imagen-pas .img-pas {
+  border-radius: 50%;
+  border: solid 2px #01CDEF;
+}
+
+.cont-nomb-pas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.cont-detalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+  color: #01CDEF;
+}

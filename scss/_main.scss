@@ -1,0 +1,32 @@
+@import "map";
+
+body {
+	margin: 0;
+	background-image: url(../assets/origen_fondo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+video {
+	width: 1555px;
+	height: 900px;
+	@media all and (max-width: 1400px){
+		width: 650px;
+    	height:450px;
+    	@media all and (max-width: 576px){
+    		width: 350px;
+    		height:300px;
+    	}
+    }
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 34px;
+	padding-bottom: 5px;
+	font-family: 'Oxygen', sans-serif;
+	color: map-get($map: $palette, $key: 'Primario');
+}
+

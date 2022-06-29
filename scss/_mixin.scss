@@ -1,0 +1,23 @@
+@mixin menu{
+	&:after {
+	content: "";
+	width: 0;
+	height: 5px;
+	background-color: #01CDEF;
+	position: absolute;
+	bottom: 0;
+	transition: .5s ease-out all;
+	}
+		&:hover {
+		background-color: #01CDEF;
+		box-shadow: 5px 5px 10px rgba(165, 242, 255, 0.6);
+		border-radius: 20px;
+		width: 100%;
+		right: 0%;
+		align-items: center;
+		}
+	
+}
+
+
+
